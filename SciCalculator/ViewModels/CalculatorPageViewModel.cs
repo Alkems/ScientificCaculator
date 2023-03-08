@@ -1,9 +1,10 @@
-﻿namespace SciCalculator.ViewModels
+﻿using System.Linq.Expressions;
+
+namespace SciCalculator.ViewModels
 {
     [INotifyPropertyChanged]
     internal partial class CalculatorPageViewModel //: INotifyPropertyChanged
     {
-        public event PropertyChangedEventHandler PropertyChanged;
 
         [ObservableProperty]
         private string inputText = string.Empty;
@@ -43,9 +44,14 @@
             try
             {
                 var inputString = NormalizeInputString();
+                var expression = new NCalc.Expression(inputString);
+                var result = expression.Evaluate();
+
+                CalculatedResult = result.ToString();
             }
-            catch (Exception)
+            catch (Exception ex)
             {
+                CalculatedResult = "Nan";
                 throw;
             }
         }
