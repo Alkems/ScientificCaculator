@@ -7,7 +7,7 @@
     <!--.Content Page Style-->
     <Style TargetType="ContentPage" ApplyToDerivedTypes="True">
         <Setter Property="NavigationPage.HasNavigationBar" Value="False"/>
-        <Setter Property="PageBackgroundColor" Value="{StaticResource PageBackGroundColor}"/>
+        <Setter Property="BackgroundColor" Value="{StaticResource PageBackGroundColor}"/>
     </Style>
 
     <!--.Grid Styles-->
@@ -23,10 +23,10 @@
     
     <!--Button Styles-->
     <Style TargetType="Button" x:Key="NumberButtonStyle">
-        <Setter Property="FrontSize" Value="22"/>
-        <Setter Property="FrontFamily" Value="RegularFont"/>
+        <Setter Property="FontSize" Value="22"/>
+        <Setter Property="FontFamily" Value="RegularFont"/>
         <Setter Property="TextColor" Value="White"/>
-        <Setter Property="BackgroundColor" Value="202731"/>
+        <Setter Property="BackgroundColor" Value="#202731"/>
         <Setter Property="BorderWidth" Value="0"/>
         <Setter Property="BorderColor" Value="{StaticResource BorderColor}"/>
         <Setter Property="VerticalOptions" Value="Fill"/>
@@ -38,8 +38,8 @@
     </Style>
 
     <Style TargetType="Button" x:Key="OperatorButtonStyle">
-        <Setter Property="FrontSize" Value="22"/>
-        <Setter Property="FrontFamily" Value="RegularFont"/>
+        <Setter Property="FontSize" Value="22"/>
+        <Setter Property="FontFamily" Value="RegularFont"/>
         <Setter Property="TextColor" Value="Black"/>
         <Setter Property="BackgroundColor" Value="#EFBB31"/>
         <Setter Property="BorderWidth" Value="0"/>
@@ -53,8 +53,8 @@
     </Style>
 
     <Style TargetType="Button" x:Key="ScientificOperatorButtonStyle">
-        <Setter Property="FrontSize" Value="14"/>
-        <Setter Property="FrontFamily" Value="RegularFont"/>
+        <Setter Property="FontSize" Value="14"/>
+        <Setter Property="FontFamily" Value="RegularFont"/>
         <Setter Property="TextColor" Value="White"/>
         <Setter Property="BackgroundColor" Value="#2C3240"/>
         <Setter Property="BorderWidth" Value="1"/>
