@@ -392,6 +392,22 @@
             Command="{Binding NumberInputCommand}" 
             CommandParameter="0"/>
 
+        <Button
+            Grid.Row="9"
+            Grid.Column="1"
+            Style="{StaticResource NumberButtonStyle}"
+            Text="."
+            Command="{Binding NumberInputCommand}" 
+            CommandParameter="."/>
+
+        <Button
+            Grid.Row="9"
+            Grid.Column="2"
+            Style="{StaticResource NumberButtonStyle}"
+            Text="⌫"
+            Command="{Binding NumberInputCommand}" 
+            CommandParameter="⌫"/>
+
 
     </Grid>
 </ContentPage>
